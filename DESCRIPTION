@@ -1,0 +1,20 @@
+Package: baxtr
+Type: Package
+Title: A Package for the Social Scientist
+Version: 0.1.0
+Author: Jonathan Bartholomaeus
+Maintainer: <jonathanbart@me.com>
+Description: This package was developed to make R slightly easier to use for the social sciences. This set of functions aims to make simple the processes that should be simple in R, with a specific focus on tools used by social scientists. This package also includes several specific functions to calculate the scales I'm using for my PhD research.
+Depends: R (>= 3.4.4)
+Imports:
+	crayon,
+	car,
+	Hmisc,
+	purrr,
+	stats,
+	graphics,
+	xtable
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1.9000
