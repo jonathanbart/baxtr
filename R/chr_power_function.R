@@ -30,6 +30,6 @@ chr_power <- function (start_col, end_col, data) {
   cols_recode <- purrr::map_chr(cols, paste0, "_recode")
   data[,cols_recode] <- apply(data[,cols], 2, car::recode, ("1=7; 2=6; 3=5; 4=4; 5=3; 6=2; 7=1"))
   data$pwr <- (data$pwr1 + data$pwr2_recode + data$pwr3 + data$pwr4_recode + data$pwr5 + data$pwr6_recode +
-                 data$pwr7_recode + data$pwr8)
+                 data$pwr7_recode + data$pwr8)/8
   data
 }

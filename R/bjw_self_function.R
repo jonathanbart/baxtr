@@ -27,6 +27,6 @@ bjw_self <- function (start_col, end_col, data) {
     return()
   }
   data$bjw_self <- (data$bjw_self1 + data$bjw_self2 + data$bjw_self3 + data$bjw_self4 + data$bjw_self5 + data$bjw_self6 +
-                      data$bjw_self7 + data$bjw_self8)
+                      data$bjw_self7 + data$bjw_self8)/8
   data
 }
